@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+body {
+  width: 90rem;
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Karla", sans-serif;
+}
+
+main {
+  display: grid;
+  background-color: #fff;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 220px 220px;
+  width: 700px;
+  border-radius: 5px;
+  box-shadow: 1px 0 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  grid-column: 1 / span 2;
+  padding: 2.1875rem;
+  /* grid-row: 1/2; */
+}
+.description h2 {
+  margin-bottom: 1.2rem;
+  color: hsl(179, 62%, 43%);
+}
+
+.description-first {
+  margin-bottom: 1.2rem;
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+}
+
+.description-second {
+  color: hsl(218, 22%, 67%);
+}
+.subscription,
+.why-us {
+  padding: 2.1875rem;
+  background-color: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+}
+.subscription {
+  border-bottom-left-radius: 5px;
+}
+
+.sub-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+.subscription p {
+  margin-bottom: 0.2rem;
+}
+.subscription span {
+  font-weight: bold;
+  font-size: 22px;
+}
+.why-us {
+  background-color: hsla(179, 62%, 43%, 0.863);
+  border-bottom-right-radius: 5px;
+}
+.btn {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.7rem 5rem;
+  background-color: hsl(71, 73%, 54%);
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5px;
+  box-shadow: 1px 0 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.why-us p {
+  width: 200px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 420px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+  }
+  .btn {
+    text-align: center;
+    padding: 1rem 7rem;
+  }
+  .subscription {
+    border-bottom-left-radius: 0;
+  }
+  .why-us {
+    background-color: hsla(179, 62%, 43%, 0.863);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
